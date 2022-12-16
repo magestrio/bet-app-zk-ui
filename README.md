@@ -1,34 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Bet ZK application: UI
 
-First, run the development server:
+Bet application is designed to provide secure and decentralized way to bet on current events. The user has a list of events (i.e., football matches) where everyone can choose a winner from the available options (i.e. team 1 win / team 2 win / draw). They can place a bet with an app-related coin called BET. After the end of the event oracle server will be updated and the winner will be revealed. The winners receive their rewards, the losers lose everything they wagered.
 
-```bash
+It is supposed to make up of 3 parts:
+  - UI + Smart Contract
+  - Offchain server
+  - Oracle server 
+
+## How to run project for Berkeley testnet
+
+### Running oracle server
+
+Go to oracle repository and follow the steps described there
+
+### Running UI
+
+```sh
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## All repository locations:
+  - (UI) https://github.com/magestrio/bet-app-zk-ui (you are here)
+  - (Smart Contracts) https://github.com/magestrio/bet-app-zk-contracts
+  - (Oracle) https://github.com/magestrio/bet-oracle
+  - (Off-chain) https://github.com/magestrio/bet-offchain
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Future milestone
+  - Improving UI
+  - Swapping MINA -> BET, BET -> MINA
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## License
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[Apache-2.0](LICENSE)
